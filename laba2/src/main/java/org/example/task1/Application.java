@@ -43,8 +43,7 @@ class ThirdPartyYouTubeApiClient implements YouTubeApiClient {
         return getSomeVideo(videoId);
     }
 
-    // -------------------------------------------------------------
-    //MARK: - FAKE NETWORK METHODS
+
 
     private int random(int min, int max) {
         return min + (int) (Math.random() * ((max - min) + 1));
@@ -60,7 +59,7 @@ class ThirdPartyYouTubeApiClient implements YouTubeApiClient {
 
         HashMap<String, Video> hmap = new HashMap<String, Video>();
 
-        //MARK: - Заполняем Map фейк данными
+    
         hmap.put("catzzzzzzzzz", new Video("sadgahasgdas", "Catzzzz.avi"));
         hmap.put("mkafksangasj", new Video("mkafksangasj", "Dog play with ball.mp4"));
         hmap.put("dancesvideoo", new Video("asdfas3ffasd", "Dancing video.mpq"));
